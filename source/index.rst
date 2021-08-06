@@ -8,12 +8,14 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: 目录:
+   
+   chap_04/chap_04
 
 
 
-Indices and tables
-==================
+搜索文档
+========
 
 * :ref:`genindex`
 * :ref:`modindex`
