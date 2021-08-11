@@ -1,0 +1,18 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{quantikz}[row sep={1cm,between origins}]
+  \qw & \qw & \ctrl{1} & \midstick[2,brackets=none]{=}\qw & \ctrl{1} & \qw & \qw \\
+  \qw & \gate{R_x(\theta)} & \targ{} & \qw & \targ{} & \gate{R_x(\theta)} & \qw
+\end{quantikz}
+
+\end{document}

@@ -1,0 +1,38 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{quantikz}[row sep={1cm,between origins}, column sep={0.35cm}]
+  \qw & \ctrl{1} & \midstick[3,brackets=none]{=}\qw &
+  \qw & \qw & \qw & \qw & \qw
+  \gategroup[2,steps=4,style={dashed,
+    rounded corners,fill=blue!20, inner xsep=1pt, inner ysep=1pt},
+  background]{} &
+  \ctrl{1} & % operator V, 2-3
+  \qw & \ctrl{1} & \qw & \ctrl{2} & \qw & \qw & % operator VT, 2-3
+  \qw & \ctrl{2} & \gate{P_\alpha}
+  \gategroup[1,steps=1,style={dashed,
+    rounded corners,fill=blue!20, inner xsep=1pt, inner ysep=1pt},
+  background]{} &
+  \qw % operator V, 1-3
+  \\
+  \qw & \ctrl{1} & \qw &
+  \qw & \ctrl{1} & \qw & \ctrl{1} & \gate{P_\alpha} & \targ{} & % operator V, 2-3
+  \gate{P_{\alpha}^\dagger} & \targ{} & \ctrl{1} & \qw & \qw & \ctrl{1} & % operator VT, 2-3
+  \qw & \qw & \qw & \qw % operator V, 1-3
+  \\
+  \qw & \gate{U} & \qw &
+  \gate{C} & \targ{} & \gate{B} & \targ{} & \qw & \qw & % operator V, 2-3
+  \qw & \qw & \targ{} & \targ{} & \gate{B^\dagger} & \targ{} & % operator VT, 2-3
+  \gate{B} & \targ{} & \gate{A} & \qw % operator V, 1-3
+\end{quantikz}
+
+\end{document}

@@ -1,0 +1,24 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{quantikz}[row sep={1cm,between origins}, column sep={0.35cm}]
+  \qw & \qw & \ctrl{1} & \midstick[3,brackets=none]{=}\qw &
+  \ctrl{1} & \qw & \ctrl{2} & \qw
+  \\
+  \qw & \ctrl{1} & \targ{} & \qw &
+  \targ{} & \ctrl{1} & \qw & \qw
+  \\
+  \qw & \targ{} & \qw & \qw &
+  \qw & \targ{} & \targ{} & \qw
+\end{quantikz}
+
+\end{document}

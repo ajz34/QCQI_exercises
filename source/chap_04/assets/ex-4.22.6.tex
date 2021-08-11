@@ -1,0 +1,24 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{quantikz}[row sep={1cm,between origins}, column sep={0.8cm}]
+  \lstick{$x_1$}\slice{\ket{\psi_0}} & \qw\slice{\ket{\psi_1}} & \ctrl{1}\slice{\ket{\psi_2}} & \ctrl{2}\slice{\ket{\psi_3}} & \midstick[3,brackets=none]{=}\qw\slice{\ket{\psi_0}} &
+  \ctrl{1}\slice{\ket{\psi_4}} & \qw\slice{\ket{\psi_5}} & \qw
+  \\
+  \lstick{$x_2$}\qw & \ctrl{1} & \targ{} & \qw & \qw &
+  \targ{} & \ctrl{1} & \qw
+  \\
+  \lstick{$x_3$}\qw & \targ{} & \qw & \targ{} & \qw &
+  \qw & \targ{} & \qw
+\end{quantikz}
+
+\end{document}

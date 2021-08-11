@@ -1,0 +1,22 @@
+\documentclass[12pt]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+$$
+\begin{quantikz}
+  \lstick{$x_1$} & \gate{H} & \ctrl{1} & \gate{H} & \midstick[2,brackets=none]{=}\qw &
+  \targ{} & \qw \\
+  \lstick{$x_2$} & \qw & \gate{Z} & \qw & \qw &
+  \ctrl{-1} & \qw
+\end{quantikz}
+$$
+
+\end{document}

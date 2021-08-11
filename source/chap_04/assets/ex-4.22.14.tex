@@ -1,0 +1,21 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{quantikz}[row sep={1cm,between origins}]
+  \lstick{\ket{1}} & \gate{X} & \ctrl{1} & \qw\rstick{\ket{0}} & \midstick[3,brackets=none]{$\neq$} &
+  \lstick{\ket{1}} & \ctrl{1} & \gate{X} & \qw\rstick{\ket{0}}
+  \\
+  \lstick{\ket{0}} & \qw & \gate{X} & \qw\rstick{\ket{0}} &&
+  \lstick{\ket{0}} & \gate{X} & \qw & \qw\rstick{\ket{1}}
+\end{quantikz}
+
+\end{document}

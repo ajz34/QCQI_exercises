@@ -1,0 +1,27 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+$$
+\begin{quantikz}[row sep={1cm,between origins}]
+  \qw & \qw & \ctrl{1} & \qw & \ctrl{1} & \qw \\
+  \qw & \gate{P_\alpha} & \targ{} & \gate{P_\alpha^\dagger} & \targ{} & \qw
+\end{quantikz}
+=
+\begin{bmatrix}
+  1 & 0 & 0 & 0 \\
+  0 & 1 & 0 & 0 \\
+  0 & 0 & e^{- i \alpha} & 0 \\
+  0 & 0 & 0 & e^{i \alpha}
+\end{bmatrix}
+$$
+
+\end{document}

@@ -1,0 +1,21 @@
+\documentclass[12pt]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+$$
+\begin{quantikz}[row sep={1cm,between origins}, column sep={1cm}]
+  \lstick{$x_1$} \slice{\ket{\psi_0}} & \qw\slice{\ket{\psi_1}} & \ctrl{1}\slice{\ket{\psi_2}} & \qw\slice{\ket{\psi_3}} & \ctrl{1}\slice{\ket{\psi_4}} & \ctrl{2}\slice{\ket{\psi_5}} & \qw \\
+  \lstick{$x_2$}  & \ctrl{1} & \targ{} & \ctrl{1} & \targ{} & \qw & \qw \\
+  \lstick{$x_3$}  & \gate{V} & \qw & \gate{V^\dagger} & \qw & \gate{V} & \qw
+\end{quantikz}
+$$
+
+\end{document}

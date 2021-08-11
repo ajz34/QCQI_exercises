@@ -1,0 +1,24 @@
+\documentclass[12pt]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+$$
+\begin{quantikz}
+  \lstick{$x_1$} & \ctrl{1} & \midstick[2,brackets=none]{=}\qw &
+  \gate{Z} & \midstick[2,brackets=none]{=}\qw &
+  \ctrl{1} & \qw \\
+  \lstick{$x_2$} & \gate{Z} & \qw &
+  \ctrl{-1} & \qw &
+  \control{} & \qw
+\end{quantikz}
+$$
+
+\end{document}

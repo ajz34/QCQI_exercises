@@ -1,0 +1,21 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{quantikz}[row sep={1cm,between origins}, column sep={0.35cm}]
+  \qw & \qw & \ctrl{1} & \qw & \ctrl{1} & \midstick[2,brackets=none]{=}\qw &
+  \qw & \ctrl{1} & \qw & \ctrl{1} & \qw & \qw \\
+  \qw & \gate{T} & \targ{} & \gate{T^\dagger} & \targ{} & \qw &
+  \gate{T^\dagger} & \targ{} & \gate{T^\dagger} & \targ{} & \gate{S} & \qw
+\end{quantikz}
+
+\end{document}
+\midstick[3,brackets=none]{=}\qw

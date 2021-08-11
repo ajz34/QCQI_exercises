@@ -1,0 +1,21 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+  
+\begin{quantikz}[row sep={1cm,between origins}]
+  \qw & \gate{\Lambda} & \ctrl{1} & \midstick[3,brackets=none]{$=$}\qw &
+  \ctrl{1} & \gate{\Lambda} & \qw
+  \\
+  \qw & \qw & \gate{A} & \qw &
+  \gate{A} & \qw & \qw
+\end{quantikz}
+  
+\end{document}

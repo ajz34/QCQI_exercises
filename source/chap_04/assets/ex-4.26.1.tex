@@ -1,0 +1,20 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{quantikz}[row sep={1cm,between origins}]
+  \qw & \qw & \qw & \qw & \ctrl{2} & \qw & \qw & \qw & \qw \\
+  \qw & \qw & \ctrl{1} & \qw & \qw & \qw & \ctrl{1} & \qw & \qw \\
+  \qw & \gate{R_y(\pi/4)} & \targ{} & \gate{R_y(\pi/4)} & \targ{} & \gate{R_y(-\pi/4)} & \targ{} & \gate{R_y(-\pi/4)} & \qw \\
+\end{quantikz}
+
+\end{document}
+\midstick[3,brackets=none]{=}\qw
