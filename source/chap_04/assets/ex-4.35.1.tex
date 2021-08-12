@@ -1,0 +1,23 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{quantikz}[row sep={1cm,between origins}]
+  \qw & \ctrl{1} & \meter{} & \midstick[2,brackets=none]{=} &
+  \meter{} & \cwbend{1} & \midstick[2,brackets=none]{=} &
+  \meter{} \vcw{1} &
+  \\
+  \qw & \gate{U} & \qw & \qw &
+  \qw & \gate{U} & \qw &
+  \gate{U} & \qw
+\end{quantikz}
+
+\end{document}
