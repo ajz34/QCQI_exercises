@@ -111,7 +111,7 @@ jupyter_execute_notebooks = "off"
 
 comments_config = {
    "utterances": {
-      "repo": "ajz34/QCE_zh",
+      "repo": "ajz34/QCQI_exercises",
    }
 }
 
