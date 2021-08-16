@@ -1,0 +1,18 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{quantikz}[row sep={1cm,between origins}]
+  \qw & \gate{H} & \gate{H} & \gate{S} & \ctrl{1} & \octrl{1} & \swap{1} & \qw \\
+  \qw & \ctrl{-1} & \octrl{-1} & \ctrl{-1} & \gate{H} & \gate{H} & \targX{} & \qw
+\end{quantikz}
+
+\end{document}

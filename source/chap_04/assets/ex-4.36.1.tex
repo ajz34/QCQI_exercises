@@ -1,0 +1,24 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{quantikz}[row sep={1cm,between origins}]
+  \lstick{$a$} & \qw\gategroup[4,steps=1,style={dashed,
+    rounded corners,fill=blue!20, inner xsep=1pt, inner ysep=1pt},
+  background]{} & \ctrl{2}\gategroup[4,steps=2,style={dashed,
+    rounded corners,fill=orange!20, inner xsep=1pt, inner ysep=1pt},
+  background]{} & \qw & \qw\rstick{$a$} \\
+  \lstick{$b$} & \ctrl{2} & \qw & \ctrl{1} & \qw\rstick{$b$} \\
+  \lstick{$c$} & \qw & \targ{} & \targ{} & \qw\rstick{$e$} \\
+  \lstick{$d$} & \targ{} & \qw & \ctrl{-1} & \qw\rstick{$f$}
+\end{quantikz}
+
+\end{document}

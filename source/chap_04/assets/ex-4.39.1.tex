@@ -1,0 +1,19 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{quantikz}[row sep={1cm,between origins}]
+  \qw & \octrl{1} & \gate{\tilde{U}} & \octrl{1} & \qw \\
+  \qw & \ctrl{1} & \ctrl{-1} & \ctrl{1} & \qw \\
+  \qw & \targ{} & \ctrl{-1} & \targ{} & \qw
+\end{quantikz}
+
+\end{document}

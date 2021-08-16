@@ -1,0 +1,19 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+  
+\begin{quantikz}[row sep={1cm,between origins}, column sep={1.2cm,between origins}]
+  \lstick{\ket{0}} & \gate{H}\slice{\ket{\psi_1}} & \ctrl{1}\slice{\ket{\psi_2}} & \qw\slice{\ket{\psi_3}} & \ctrl{1}\slice{\ket{\psi_4}} & \gate{H}\slice{\ket{\psi_5}} & \meter{} \\
+  \lstick{\ket{0}} & \gate{H} & \ctrl{1} & \qw & \ctrl{1} & \gate{H} & \meter{} \\
+  \lstick{\ket{\psi}} & \qw & \targ{} & \gate{S} & \targ{} & \qw & \qw\rstick{$R_z(\theta) \ket{\psi}$}
+\end{quantikz}
+  
+\end{document}
