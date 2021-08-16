@@ -28,6 +28,9 @@ author = 'ajz34'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "sphinx_comments",
+    "myst_nb",
+    "sphinx.ext.mathjax",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -94,7 +97,7 @@ exclude_patterns = [
 #
 html_theme = 'sphinx_book_theme'
 html_theme_options = {
-    "repository_url": "https://github.com/ajz34/QCE_zh",
+    "repository_url": "https://github.com/ajz34/QCQI_exercises",
     "use_repository_button": True,
     "use_issues_button": True,
     "toc_title": "文档目录",
