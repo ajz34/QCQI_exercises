@@ -1,0 +1,14 @@
+version: 2
+
+submodules:
+  include: all
+
+python:
+  version: 3.7
+  install:
+    - requirements: requirements.yml
+
+sphinx:
+  builder: html
+
+formats: [htmlzip]
