@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'QCQI Exercises'
+project = '量子计算与量子信息 习题解答'
 copyright = '2021, ajz34'
 author = 'ajz34'
 
@@ -122,5 +122,8 @@ myst_enable_extensions = [
     "dollarmath",
     "html_image",
 ]
+
+# https://stackoverflow.com/questions/56336234/build-fail-sphinx-error-contents-rst-not-found
+master_doc = "index"
 
 mathjax_path = "MathJax/es5/tex-chtml-full.js"
