@@ -1,0 +1,20 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+  
+\begin{quantikz}[row sep={1cm,between origins}]
+  \qw & \qw & \gate{H} & \ctrl{3} & \qw & \qw & \qw & \qw & \qw & \ctrl{3} & \gate{H} & \qw & \qw \\
+  \qw & \gate{R_z(-\pi/2)} & \gate{H} & \qw & \ctrl{2} & \qw & \qw & \qw & \ctrl{2} & \qw & \gate{H} & \gate{R_z(\pi/2)} & \qw \\
+  \qw & \qw & \qw & \qw & \qw & \ctrl{1} & \qw & \ctrl{1} & \qw & \qw & \qw & \qw & \qw \\
+  \qw & \qw & \qw & \targ{} & \targ{} & \targ{} & \gate{e^{-i \Delta t Z}} & \targ{} & \targ{} & \targ{} & \qw & \qw & \qw \\
+\end{quantikz}
+  
+\end{document}
