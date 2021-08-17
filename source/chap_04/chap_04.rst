@@ -3,7 +3,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: 目录:
+   :caption: 目录
    
    sec_04_02
    sec_04_03

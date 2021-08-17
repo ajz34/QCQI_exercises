@@ -34,6 +34,7 @@
    :maxdepth: 2
    
    chap_04/chap_04
+   chap_05/chap_05
 
 搜索文档
 ========
