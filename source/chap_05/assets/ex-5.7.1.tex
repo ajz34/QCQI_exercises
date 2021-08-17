@@ -1,0 +1,22 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+  
+\begin{quantikz}[row sep={1cm,between origins}]
+  \lstick{\ket{j_1}} & \qw & \qw & \push{\;\cdots\;} & \qw & \ctrl{5} & \qw\rstick[wires=5]{$\ket{j} = \ket{j_1j_2\cdots j_{n-1}j_n}$} \\
+  \lstick{\ket{j_2}} & \qw & \qw & \push{\;\cdots\;} & \ctrl{4} & \qw & \qw \\
+  & \text{$\vdots$} \\
+  \lstick{\ket{j_{n-1}}} & \qw & \ctrl{2} & \push{\;\cdots\;} & \qw & \qw & \qw \\
+  \lstick{\ket{j_{n}}} & \ctrl{1} & \qw & \push{\;\cdots\;} & \qw & \qw & \qw \\
+  \lstick{\ket{u}} & \gate{U^{2^0}}\qwbundle[alternate]{} & \gate{U^{2^1}}\qwbundle[alternate]{} & \push{\;\cdots\;}\qwbundle[alternate]{} & \gate{U^{2^{n-1}}}\qwbundle[alternate]{} & \gate{U^{2^{n}}}\qwbundle[alternate]{} & \rstick{$U^j \ket{u}$}\qwbundle[alternate]{} \\
+\end{quantikz}
+  
+\end{document}
