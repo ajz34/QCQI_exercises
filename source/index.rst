@@ -35,6 +35,7 @@
    
    chap_04/chap_04
    chap_05/chap_05
+   chap_06/chap_06
 
 搜索文档
 ========
