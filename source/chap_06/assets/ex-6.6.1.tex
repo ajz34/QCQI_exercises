@@ -1,0 +1,19 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+$$
+\begin{quantikz}[row sep={1cm,between origins}, column sep={0.35cm}]
+  \qw & \gate{X} & \qw & \ctrl{1} & \qw & \gate{X} & \qw \\
+  \qw & \gate{X} & \gate{H} & \targ{} & \gate{H} & \gate{X} & \qw
+\end{quantikz}
+= e^{i \alpha} (2 |00\rangle \langle00| - I)
+$$
+\end{document}

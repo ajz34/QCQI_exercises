@@ -1,0 +1,19 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{quantikz}[row sep={1cm,between origins}, column sep={0.35cm}]
+  \lstick{\ket{q}}\qw & \ctrl{2} & \qw & \ctrl{2} & \qw \\
+  \lstick{\ket{x}}\qwbundle[alternate]{} & \qwbundle[alternate]{} & \gate[wires=2]{O}\qwbundle[alternate]{} & \qwbundle[alternate]{} & \qwbundle[alternate]{} \\
+  \lstick{$\frac{|0\rangle - |1\rangle}{\sqrt{2}}$}\qw & \gate{Z} & \qw & \gate{Z} & \qw
+\end{quantikz}
+
+\end{document}
