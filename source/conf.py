@@ -129,4 +129,4 @@ myst_enable_extensions = [
 # https://stackoverflow.com/questions/56336234/build-fail-sphinx-error-contents-rst-not-found
 master_doc = "index"
 
-mathjax_path = "Mathjax/es5/tex-chtml-full.js"
+# mathjax_path = "Mathjax/es5/tex-chtml-full.js"
