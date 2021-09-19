@@ -1,0 +1,20 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{quantikz}[row sep={1cm,between origins}, column sep={0.35cm}]
+  \lstick[wires=3]{$\ket{\phi} = \alpha\ket{x} + \beta\ket{y}$} & \gate[wires=3]{H^{\otimes n}} & \octrl{1} & \qw & \octrl{1} & \gate[wires=3]{H^{\otimes n}} & \qw \\
+  \qw & \qw & \octrl{1} & \qw & \octrl{1} & \qw & \qw \\
+  \qw & \qw & \octrl{1} & \qw & \octrl{1} & \qw & \qw \\
+  \lstick{\ket{0}} & \qw & \targ{} & \gate{\begin{bmatrix} 1 & 0 \\ 0 & e^{-i \Delta t} \end{bmatrix}} & \targ{} & \qw & \qw
+\end{quantikz}
+
+\end{document}

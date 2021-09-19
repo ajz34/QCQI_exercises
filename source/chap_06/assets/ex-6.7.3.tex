@@ -1,0 +1,20 @@
+\documentclass[12pt, landscape]{article}
+\usepackage{fouriernc}
+\usepackage{bm}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{quantikz}[row sep={1cm,between origins}, column sep={0.35cm}]
+  \lstick[wires=3]{$\ket{\phi} = \alpha \ket{x} + \beta \ket{y}$} \slice{\ket{\psi_0}} & \gate[wires=4]{\text{oracle}} \slice{\ket{\psi_1}} & \qw \slice{\ket{\psi_2}} & \gate[wires=4]{\text{oracle}} \slice{\ket{\psi_3}} & \qw \\
+  \qw & \qw & \qw & \qw & \qw \\
+  \qw & \qw & \qw & \qw & \qw \\
+  \lstick{\ket{0}} & \qw & \gate{\begin{bmatrix} 1 & 0 \\ 0 & e^{- i \Delta t} \end{bmatrix}} & \qw & \qw
+\end{quantikz}
+
+\end{document}
